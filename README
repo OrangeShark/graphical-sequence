@@ -1,0 +1,11 @@
+This is a C program based on the Graphical Sequence Algorithm from my Graph Theory class. The notes are as followed:
+
+Graphical Sequence Algorithm
+Input: A sequence s of p integers in decreasing order
+Output: Yes if s is graphical
+        No if s is not graphical
+1. If some integer s exceed |s| - 1 = p -1 then stop and say No.
+2. If each term of s is 0, then stop and say Yes.
+3. If some integer is negative, then sto pand say No.
+4. Delete the first term, n, from the sequence and then subtract one from the next n terms to get a new sequence.
+5. List the new sequence in decreasing order (if necessary) and then go to 2.
