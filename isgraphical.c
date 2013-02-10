@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
+#include "graphical.h"
 
 void print_array(int a[], int length)
 {
@@ -34,7 +35,10 @@ int main(int argc, char *argv[])
 
     insertion_sort(seq, p);
 
-    print_array(seq, p);
-
+    if( is_graphical(seq, p) ) {
+        printf("Yes\n");
+    } else{
+        printf("No\n");
+    }
     return 0;
 }
