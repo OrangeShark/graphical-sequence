@@ -14,7 +14,7 @@ int is_graphical( int s[], int p)
         }
     }
 
-    while( p > 1 ) {
+    while( p > 0 ) {
         
 
         zflag = 0;
